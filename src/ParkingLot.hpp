@@ -32,7 +32,6 @@ public:
     explicit ParkingLot(const std::string& dbPath, int totalSlots);
     ~ParkingLot();
 
-    // Core operations
     ParkResult parkVehicle(const std::string& vehicleNumber, VehicleType type);
     ReleaseResult releaseVehicle(const std::string& vehicleNumber);
     std::vector<Slot> getOccupiedSlots();
